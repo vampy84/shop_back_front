@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 499px){
+	#products > div {
+		max-width: 100%;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+	#products > div {
+		max-width: 50%;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	#products > div {
+		max-width: 33.3%;
+	}
+}
+
+#products {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img {
+	max-width: 100%;
+}
+
+#logo {
+	margin-top: 15px;
+}
+
+#products > div:hover{
+	box-shadow: 0 0 30px black;
+}
+
